@@ -1,0 +1,59 @@
+/* styles.css */
+
+/* Styling for the todo list container */
+.todo-container {
+  padding: 2rem;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the todo list heading */
+.todo-heading {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Styling for individual todo items */
+.todo-item {
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+  transition: background-color 0.3s;
+}
+
+/* Styling for todo item title */
+.todo-title {
+  text-decoration: none;
+}
+
+/* Styling for todo item title when done */
+.todo-title.done {
+  text-decoration: line-through;
+}
+
+/* Styling for background image */
+.background-image {
+  /* Add your background image URL here */
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Styling for motion effect */
+.motion-effect {
+  /* Add your motion effect styles here */
+  animation: motionEffect 5s infinite alternate;
+}
+
+@keyframes motionEffect {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}

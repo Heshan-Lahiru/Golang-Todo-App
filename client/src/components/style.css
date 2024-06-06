@@ -1,0 +1,67 @@
+.add-todo-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-image: url('https://images.pexels.com/photos/355508/pexels-photo-355508.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'); /* Replace 'your-image-url.jpg' with the URL of your desired background image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px; /* Add padding to create some space between the background image and the form */
+  }
+  
+  .add-todo-form input,
+  .add-todo-form textarea {
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+  }
+  
+  .add-todo-form input:focus,
+  .add-todo-form textarea:focus {
+    outline: none;
+    border-color: #82b1ff; /* Change to desired focus color */
+  }
+  
+  .add-todo-form button {
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: #4caf50; /* Change to desired button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-todo-form button:hover {
+    background-color: #45a049; /* Change to desired hover color */
+  }
+  
+  /* Animation for form and button */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .add-todo-form {
+    animation: slideIn 0.5s ease forwards;
+  }
+  
+  .add-todo-form button {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
